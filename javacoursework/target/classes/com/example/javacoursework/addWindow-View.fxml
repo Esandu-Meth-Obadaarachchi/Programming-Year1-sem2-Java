@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addWindowPane" prefHeight="450.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javacoursework.HelloController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b2bbc3" height="53.0" stroke="BLACK" strokeType="INSIDE" width="527.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#297dd9" height="61.0" layoutX="498.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d1e70d" height="324.0" layoutX="13.0" layoutY="73.0" stroke="BLACK" strokeType="INSIDE" width="463.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b2bbc3" height="138.0" layoutX="507.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="139.0" />
+      <Label fx:id="idLabel" layoutX="34.0" layoutY="87.0" prefHeight="25.0" prefWidth="95.0" text="Driver-ID :">
+         <font>
+            <Font name="American Typewriter" size="16.0" />
+         </font></Label>
+      <TextField fx:id="driverIdInput" layoutX="214.0" layoutY="87.0" prefHeight="25.0" prefWidth="219.0" />
+      <Label fx:id="nameLabel" layoutX="34.0" layoutY="142.0" prefHeight="25.0" prefWidth="70.0" text="Name :">
+         <font>
+            <Font name="American Typewriter" size="16.0" />
+         </font></Label>
+      <TextField fx:id="nameInput" layoutX="215.0" layoutY="142.0" prefHeight="25.0" prefWidth="219.0" />
+      <Label fx:id="pointsLabel" layoutX="34.0" layoutY="195.0" prefHeight="25.0" prefWidth="125.0" text="Current Points :">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="pointsInput" layoutX="215.0" layoutY="195.0" prefHeight="25.0" prefWidth="219.0" />
+      <Label fx:id="ageLabel" layoutX="34.0" layoutY="245.0" prefHeight="25.0" prefWidth="100.0" text="Age :">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="ageInput" layoutX="214.0" layoutY="245.0" prefHeight="25.0" prefWidth="219.0" />
+      <Label fx:id="carLabel" layoutX="34.0" layoutY="295.0" prefHeight="25.0" prefWidth="100.0" text="Car :">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="carInput" layoutX="214.0" layoutY="295.0" prefHeight="25.0" prefWidth="219.0" />
+      <Label fx:id="teamLabel" layoutX="34.0" layoutY="349.0" prefHeight="25.0" prefWidth="100.0" text="Team :">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextField fx:id="teamInput" layoutX="215.0" layoutY="349.0" prefHeight="25.0" prefWidth="219.0" />
+      <ImageView fx:id="logoadd" fitHeight="129.0" fitWidth="129.0" layoutX="509.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Rally_race_borderless_and_perfect.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="textLabel" layoutX="20.0" layoutY="390.0" prefHeight="61.0" prefWidth="606.0" text="PRESS  ADD DRIVER BUTTON TO ADD THE DRIVER TEMPERARLY, PRESS SAVE THE DRIVERS">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font></Label>
+      <Label fx:id="savedLabel" layoutX="482.0" layoutY="337.0" prefHeight="26.0" prefWidth="163.0">
+         <font>
+            <Font name="American Typewriter" size="14.0" />
+         </font></Label>
+      <Button fx:id="addToListButton" layoutX="516.0" layoutY="232.0" mnemonicParsing="false" onAction="#onAddToListClick" prefHeight="25.0" prefWidth="100.0" text="ADD Driver" />
+      <Label fx:id="idVarifyLabel" layoutX="214.0" layoutY="112.0" prefHeight="17.0" prefWidth="235.0" textFill="#f50b0b" />
+      <Label fx:id="nameVarifyLabel" layoutX="203.0" layoutY="169.0" prefHeight="17.0" prefWidth="219.0" textFill="#e40e0e" />
+      <Label fx:id="pointsVarifyLabel" layoutX="201.0" layoutY="220.0" prefHeight="17.0" prefWidth="242.0" textFill="#e40e0e" />
+      <Label fx:id="ageVarifyLabel" layoutX="199.0" layoutY="270.0" prefHeight="17.0" prefWidth="242.0" textFill="#e40e0e" />
+      <Label fx:id="carVarifyLabel" layoutX="214.0" layoutY="321.0" prefHeight="17.0" prefWidth="219.0" textFill="#e40e0e" />
+      <Label fx:id="teamVarifyLabel" layoutX="215.0" layoutY="372.0" prefHeight="17.0" prefWidth="219.0" textFill="#e40e0e" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="600.0" text="                                            Add new Drivers" textFill="#0e15a4">
+         <font>
+            <Font name="American Typewriter" size="19.0" />
+         </font>
+      </Label>
+      <Line endX="19.0" endY="64.0" layoutX="486.0" layoutY="77.0" startX="20.0" startY="-77.0" stroke="#0e15a4" strokeWidth="4.0" />
+      <Line endX="120.0" endY="19.621307373046875" layoutX="521.0" layoutY="122.0" startX="-13.0" startY="19.621337890625" stroke="#0e15a4" strokeWidth="4.0" />
+      <Line endX="-517.0" endY="-38.0" layoutX="518.0" layoutY="88.0" startX="-12.631561279296875" startY="-37.999996185302734" stroke="#0e15a4" strokeWidth="4.0" />
+      <Line endX="-517.0" endY="-38.0" layoutX="519.0" layoutY="40.0" startX="6.0" startY="-38.0" stroke="#0e15a4" strokeWidth="4.0" />
+      <Line endX="20.0" endY="-29.0" layoutX="-18.0" layoutY="76.0" startX="20.0" startY="-74.0" stroke="#0e15a4" strokeWidth="4.0" />
+      <Line endX="-517.0" endY="-38.0" layoutX="639.0" layoutY="40.0" startX="6.0" startY="-38.0" stroke="#0e15a4" strokeWidth="4.0" />
+      <Line endX="18.82843017578125" endY="60.621307373046875" layoutX="625.0" layoutY="81.0" startX="20.0" startY="-77.0" stroke="#0e15a4" strokeWidth="4.0" />
+   </children>
+</AnchorPane>
